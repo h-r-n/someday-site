@@ -1,0 +1,129 @@
+/*
+ * SOMEDAY の公開ページ（https://h-r-n.github.io/someday-site/）の共通の見た目。
+ * 色は DESIGN.md のトークン（src/constants/theme.ts の Colors）の写し。外部のフォント・スクリプトは読まない。
+ * ページを足すとき（privacy/・support/ など）は、<link rel="stylesheet" href="../assets/site.css"> で読み、
+ * .page の中に .brand・h1・.lead・.card・.legal を並べる。
+ */
+:root {
+  color-scheme: light dark;
+  --bg: #ffffff;
+  --card: #ffffff;
+  --sunk: #f3f5f8;
+  --line: #e4e8ee;
+  --ink: #141a22;
+  --ink2: #66707b;
+  --accent: #38a8e6;
+  --accent-soft: #e7f5fd;
+  --accent-ink: #1679b5;
+  --shadow: 0 1px 2px rgba(20, 26, 34, 0.06), 0 8px 24px rgba(20, 26, 34, 0.08);
+  --r-card: 20px;
+  --r-md: 12px;
+  --gutter: 20px;
+  --font-ja:
+    'Zen Kaku Gothic New', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', system-ui,
+    sans-serif;
+  --font-en: 'Jost', 'Avenir Next', 'Helvetica Neue', system-ui, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121820;
+    --card: #1a222c;
+    --sunk: #202a35;
+    --line: #2a3542;
+    --ink: #f2f4f8;
+    --ink2: #a3adbd;
+    --accent: #5cbcf0;
+    --accent-soft: #15303d;
+    --accent-ink: #8fd2f7;
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.3);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-ja);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+a {
+  color: var(--accent-ink);
+}
+
+.page {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 24px var(--gutter) 40px;
+}
+
+.brand {
+  margin: 0;
+  font-family: var(--font-en);
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.3em;
+}
+
+h1 {
+  margin: 20px 0 0;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1.35;
+}
+
+.lead {
+  margin: 8px 0 0;
+  color: var(--ink2);
+  font-size: 13px;
+}
+
+.card {
+  margin-top: 20px;
+  background: var(--card);
+  border-radius: var(--r-card);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.links li + li {
+  border-top: 1px solid var(--line);
+}
+
+.links a {
+  display: block;
+  padding: 16px 18px;
+  color: var(--ink);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.links span {
+  display: block;
+  color: var(--ink2);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.legal {
+  margin: 28px 0 0;
+  color: var(--ink2);
+  font-size: 11px;
+  text-align: center;
+}

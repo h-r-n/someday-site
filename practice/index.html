@@ -1,0 +1,175 @@
+<!doctype html>
+<!--
+  SOMEDAY の初回起動の「共有シートでためす」で共有する、練習用の見本の投稿（P1-F10-11）。
+  公開先：https://h-r-n.github.io/someday-site/practice/（アプリの PRACTICE_URL・拡張の PracticeUrl.sample と同じ。
+  置き場所を変えるときは、アプリの両方の定数と例の表も変える）。
+  題（<title>・og:title）は共有シートの上のプレビューに出るので、手順を書く。公式の画像・ロゴ・キャラクターは使わない。
+-->
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>その他 › 編集 › ＋ › 完了</title>
+    <meta
+      name="description"
+      content="SOMEDAY の共有シートの練習用の投稿です。最後に SOMEDAY を押して「保存する」で練習は完了（練習の保存は残りません）。"
+    />
+    <meta name="robots" content="noindex" />
+    <link rel="canonical" href="https://h-r-n.github.io/someday-site/practice/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="SOMEDAY" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta property="og:url" content="https://h-r-n.github.io/someday-site/practice/" />
+    <meta property="og:title" content="その他 › 編集 › ＋ › 完了" />
+    <meta
+      property="og:description"
+      content="SOMEDAY の共有シートの練習用の投稿です。最後に SOMEDAY を押して「保存する」で練習は完了（練習の保存は残りません）。"
+    />
+    <meta property="og:image" content="https://h-r-n.github.io/someday-site/practice/og.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="湖と山の風景の上に「その他 › 編集 › ＋ › 完了」の手順を書いたカード"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="その他 › 編集 › ＋ › 完了" />
+    <meta name="twitter:image" content="https://h-r-n.github.io/someday-site/practice/og.png" />
+    <link rel="icon" type="image/png" href="../favicon.png" />
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+    <link rel="stylesheet" href="../assets/site.css" />
+    <style>
+      .post-head {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 12px 14px;
+      }
+      .post-avatar {
+        display: grid;
+        place-items: center;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background: var(--accent-soft);
+        color: var(--accent-ink);
+        font-weight: 900;
+        font-size: 13px;
+      }
+      .post-who {
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 1.3;
+      }
+      .post-who span {
+        display: block;
+        color: var(--ink2);
+        font-size: 11px;
+        font-weight: 400;
+      }
+      .post-photo {
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        background: var(--sunk);
+      }
+      .post-body {
+        padding: 14px 16px 18px;
+      }
+      .post-body p {
+        margin: 0;
+      }
+      .steps {
+        list-style: none;
+        margin: 14px 0 0;
+        padding: 0;
+        counter-reset: step;
+      }
+      .steps li {
+        display: flex;
+        gap: 10px;
+        align-items: flex-start;
+        font-size: 14px;
+        font-weight: 700;
+        counter-increment: step;
+      }
+      .steps li + li {
+        margin-top: 10px;
+      }
+      .steps li::before {
+        content: counter(step);
+        flex: none;
+        display: grid;
+        place-items: center;
+        width: 22px;
+        height: 22px;
+        margin-top: 1px;
+        border-radius: 50%;
+        background: var(--accent-soft);
+        color: var(--accent-ink);
+        font-size: 12px;
+      }
+      .post-body .finish {
+        margin-top: 14px;
+        padding: 12px 14px;
+        border-radius: var(--r-md);
+        background: var(--sunk);
+        font-size: 13px;
+      }
+      .finish b {
+        font-weight: 900;
+      }
+      .post-body .note {
+        margin: 16px 0 0;
+        color: var(--ink2);
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <p class="brand">SOMEDAY</p>
+      <h1>その他 › 編集 › ＋ › 完了</h1>
+      <p class="lead">
+        SOMEDAY の共有シートの練習用の投稿です。SNS の投稿も、同じように共有から保存できます。
+      </p>
+
+      <article class="card" aria-label="練習用の投稿">
+        <div class="post-head">
+          <span class="post-avatar" aria-hidden="true">S</span>
+          <p class="post-who" style="margin: 0">someday_sample<span>練習用の投稿</span></p>
+        </div>
+        <img
+          class="post-photo"
+          src="scene.jpg"
+          width="1200"
+          height="675"
+          alt="夕方の湖と山の風景のイラスト"
+        />
+        <div class="post-body">
+          <p>
+            共有シートのアプリの列に SOMEDAY が無いときは、次の順で前に出せます（最初の1回だけ）。
+          </p>
+          <ol class="steps">
+            <li>アプリの列の右はしの「その他」</li>
+            <li>右上の「編集」</li>
+            <li>SOMEDAY の ＋ を押して、≡ で上へ</li>
+            <li>「完了」（iOS 26 以降は ✓）で閉じる</li>
+          </ol>
+          <p class="finish">
+            最後に <b>SOMEDAY</b> を押して「保存する」で練習は完了です。練習の保存は残りません。
+          </p>
+          <p class="note">
+            Android は、共有の一覧から SOMEDAY
+            を選びます。できる機種では、長押しで「固定」すると前に出ます。
+          </p>
+        </div>
+      </article>
+
+      <p class="legal">SOMEDAY は、ディズニーとは関係の無い、非公式のファンアプリです</p>
+    </main>
+  </body>
+</html>
