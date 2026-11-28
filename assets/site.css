@@ -127,3 +127,71 @@ h1 {
   font-size: 11px;
   text-align: center;
 }
+
+/*
+ * 規約・プライバシーポリシー・サポートなど、文章のページ（terms/・privacy/・support/。P1-F0-13）。
+ * .card.doc の中に h2・p・ul・ol・dl・.note を並べる。文字は 15px 以上、行の高さ 1.8。
+ */
+.doc {
+  padding: 8px 20px 24px;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.doc h2 {
+  margin: 28px 0 0;
+  font-size: 17px;
+  font-weight: 900;
+  line-height: 1.5;
+}
+
+.doc p,
+.doc ul,
+.doc ol,
+.doc dl {
+  margin: 10px 0 0;
+}
+
+.doc ul,
+.doc ol {
+  padding-left: 1.4em;
+}
+
+.doc li + li {
+  margin-top: 4px;
+}
+
+.doc dt {
+  margin-top: 12px;
+  font-weight: 700;
+}
+
+.doc dd {
+  margin: 0;
+}
+
+.doc .note {
+  margin-top: 12px;
+  padding: 12px 14px;
+  border-radius: var(--r-md);
+  background: var(--sunk);
+}
+
+.doc .meta {
+  color: var(--ink2);
+}
+
+.doc .mail {
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.doc-nav {
+  margin: 16px 0 0;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.doc-nav a + a {
+  margin-left: 16px;
+}
